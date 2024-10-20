@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="inputPage">
+        <h1>🎉 Let's Celebrate a Special Day 🎉</h1>
+        <p>Please enter your details below to begin the celebration!</p>
+        <form id="birthdayForm" class="vertical-form">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <select id="gender" required>
+                <option value="">Gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit" id="submitButton">🎁 Let's Party! 🎁</button>
+        </form>
+    </div>
+
+    <div id="loadingPage" style="display:none;">
+        <h2>🎂 Processing, Fetching Data... 🎂</h2>
+        <div class="loadingCircle"></div>
+    </div>
+
+    <div id="birthdayPage" style="display:none;">
+        <h1 id="happyBirthday"></h1>
+        <div class="content">
+            <div class="pics">
+                <img id="pic1" src="image1.jpg" alt="Birthday Girl Picture">
+                <img id="pic2" src="image2.jpg" alt="Birthday Girl Picture">
+            </div>
+
+            <p class="birthdayPoem">Happy Birthday to a wonderful soul, <br> Whose heart shines brighter than gold... 🎶</p>
+
+            <div class="shayari">
+                <p>“तुम हंसते रहो हजारों के बीच, <br> जैसे खिलता है फूल बहारों के बीच।” </p>
+                <p>"May your day be as sweet as your smile, <br> And your life be full of joy all the while!"</p>
+            </div>
+
+            <!-- Confetti Animation -->
+            <div class="confetti-container">
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+            </div>
+
+            <!-- Moving Balloons -->
+            <div class="balloons">
+                <img src="balloon1.jpg" class="balloon">
+                <img src="balloon2.jpeg" class="balloon">
+            </div>
+
+            <!-- Star Animation -->
+            <div class="stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+
+            <div class="quotes">
+                <p>"जन्मदिन की खुशियों में सजी है ये शाम,<br>
+                    मेरी बहन शैफाली, तू है सबकी जान।<br>
+                    तेरे हर सपने की उड़ान हो ऊँची,<br>
+                    तेरे चेहरे पर हमेशा रहे मुस्कान का जाम।"</p>
+
+                <p>"On this special day, the stars align,<br>
+                    Dear sister Shefali, you forever shine.<br>
+                    May your dreams soar high, touching the sky,<br>
+                    And your smile always sparkle, like the stars so divine."</p>
+            </div>
+
+            <!-- Additional Quotes and Messages -->
+            <div class="additional-quotes">
+                <p>"हर खुशी हो तेरी, हर जहाँ हो तेरा,<br>
+                   जिंदगी का हर एक पल तेरा।"</p>
+                <p>"Wishing you happiness in every moment, <br>
+                   And may the world always be yours."</p>
+            </div>
+            <!-- Additional section for credits -->
+        <div class="credits">
+            <p>Developed by Vard Kaushik</p>
+            <img id="developerPic" src="vard.jpg" alt="Vard Kaushik" class="developer-image">
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
